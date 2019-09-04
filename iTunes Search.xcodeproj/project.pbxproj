@@ -16,7 +16,23 @@
 		46BF02432117E01600A24DE5 /* ItunesSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF02422117E01600A24DE5 /* ItunesSearchTableViewController.swift */; };
 		46BF02452117E36400A24DE5 /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF02442117E36400A24DE5 /* ResultType.swift */; };
 		46BF02472117E37000A24DE5 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF02462117E36F00A24DE5 /* HTTPMethod.swift */; };
+		D64BBECB231F51820088D90A /* SearchResultController_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64BBECA231F51820088D90A /* SearchResultController_Tests.swift */; };
+		D64BBED4231F55390088D90A /* NetworkDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64BBED3231F55390088D90A /* NetworkDataLoader.swift */; };
+		D64BBED6231F55F40088D90A /* URLSession+NetworkDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64BBED5231F55F40088D90A /* URLSession+NetworkDataLoader.swift */; };
+		D64BBED8231F5B390088D90A /* GoodResultsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64BBED7231F5B390088D90A /* GoodResultsData.swift */; };
+		D64BBEDA231F5BB50088D90A /* MockDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64BBED9231F5BB50088D90A /* MockDataLoader.swift */; };
+		D64BBEDC231F5DE20088D90A /* BadResultsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64BBEDB231F5DE20088D90A /* BadResultsData.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D64BBECD231F51820088D90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46BF021F2117D59500A24DE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46BF02262117D59500A24DE5;
+			remoteInfo = "iTunes Search";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		46BF02272117D59500A24DE5 /* iTunes Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTunes Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,10 +46,25 @@
 		46BF02422117E01600A24DE5 /* ItunesSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchTableViewController.swift; sourceTree = "<group>"; };
 		46BF02442117E36400A24DE5 /* ResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
 		46BF02462117E36F00A24DE5 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		D64BBEC8231F51810088D90A /* SearchResultController Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SearchResultController Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64BBECA231F51820088D90A /* SearchResultController_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultController_Tests.swift; sourceTree = "<group>"; };
+		D64BBECC231F51820088D90A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D64BBED3231F55390088D90A /* NetworkDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataLoader.swift; sourceTree = "<group>"; };
+		D64BBED5231F55F40088D90A /* URLSession+NetworkDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+NetworkDataLoader.swift"; sourceTree = "<group>"; };
+		D64BBED7231F5B390088D90A /* GoodResultsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodResultsData.swift; sourceTree = "<group>"; };
+		D64BBED9231F5BB50088D90A /* MockDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataLoader.swift; sourceTree = "<group>"; };
+		D64BBEDB231F5DE20088D90A /* BadResultsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadResultsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		46BF02242117D59500A24DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64BBEC5231F51810088D90A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				46BF02292117D59500A24DE5 /* iTunes Search */,
+				D64BBEC9231F51820088D90A /* SearchResultController Tests */,
 				46BF02282117D59500A24DE5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				46BF02272117D59500A24DE5 /* iTunes Search.app */,
+				D64BBEC8231F51810088D90A /* SearchResultController Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +99,7 @@
 				46BF024C2117E4F400A24DE5 /* Model Controllers */,
 				46BF02492117E4DF00A24DE5 /* View Controllers */,
 				46BF024B2117E4EC00A24DE5 /* Storyboards */,
+				D64BBED2231F55230088D90A /* Helpers */,
 				46BF02482117E4D700A24DE5 /* Resources */,
 			);
 			path = "iTunes Search";
@@ -116,6 +150,27 @@
 			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
+		D64BBEC9231F51820088D90A /* SearchResultController Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D64BBECA231F51820088D90A /* SearchResultController_Tests.swift */,
+				D64BBED9231F5BB50088D90A /* MockDataLoader.swift */,
+				D64BBED7231F5B390088D90A /* GoodResultsData.swift */,
+				D64BBEDB231F5DE20088D90A /* BadResultsData.swift */,
+				D64BBECC231F51820088D90A /* Info.plist */,
+			);
+			path = "SearchResultController Tests";
+			sourceTree = "<group>";
+		};
+		D64BBED2231F55230088D90A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D64BBED3231F55390088D90A /* NetworkDataLoader.swift */,
+				D64BBED5231F55F40088D90A /* URLSession+NetworkDataLoader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,18 +191,41 @@
 			productReference = 46BF02272117D59500A24DE5 /* iTunes Search.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D64BBEC7231F51810088D90A /* SearchResultController Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D64BBED1231F51820088D90A /* Build configuration list for PBXNativeTarget "SearchResultController Tests" */;
+			buildPhases = (
+				D64BBEC4231F51810088D90A /* Sources */,
+				D64BBEC5231F51810088D90A /* Frameworks */,
+				D64BBEC6231F51810088D90A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D64BBECE231F51820088D90A /* PBXTargetDependency */,
+			);
+			name = "SearchResultController Tests";
+			productName = "SearchResultController Tests";
+			productReference = D64BBEC8231F51810088D90A /* SearchResultController Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		46BF021F2117D59500A24DE5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
 					46BF02262117D59500A24DE5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
+					};
+					D64BBEC7231F51810088D90A = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 46BF02262117D59500A24DE5;
 					};
 				};
 			};
@@ -165,6 +243,7 @@
 			projectRoot = "";
 			targets = (
 				46BF02262117D59500A24DE5 /* iTunes Search */,
+				D64BBEC7231F51810088D90A /* SearchResultController Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -180,6 +259,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D64BBEC6231F51810088D90A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -189,14 +275,35 @@
 			files = (
 				46BF02452117E36400A24DE5 /* ResultType.swift in Sources */,
 				46BF02412117DC5200A24DE5 /* SearchResultController.swift in Sources */,
+				D64BBED6231F55F40088D90A /* URLSession+NetworkDataLoader.swift in Sources */,
 				46BF02472117E37000A24DE5 /* HTTPMethod.swift in Sources */,
 				46BF02432117E01600A24DE5 /* ItunesSearchTableViewController.swift in Sources */,
 				46BF023F2117D8FB00A24DE5 /* SearchResult.swift in Sources */,
+				D64BBED4231F55390088D90A /* NetworkDataLoader.swift in Sources */,
 				46BF022B2117D59500A24DE5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D64BBEC4231F51810088D90A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64BBECB231F51820088D90A /* SearchResultController_Tests.swift in Sources */,
+				D64BBED8231F5B390088D90A /* GoodResultsData.swift in Sources */,
+				D64BBEDC231F5DE20088D90A /* BadResultsData.swift in Sources */,
+				D64BBEDA231F5BB50088D90A /* MockDataLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D64BBECE231F51820088D90A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46BF02262117D59500A24DE5 /* iTunes Search */;
+			targetProxy = D64BBECD231F51820088D90A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		46BF022E2117D59500A24DE5 /* Main.storyboard */ = {
@@ -344,7 +451,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LambdaSchool.iTunes-Search";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -361,8 +468,53 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LambdaSchool.iTunes-Search";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D64BBECF231F51820088D90A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XVDLP5XYQ;
+				INFOPLIST_FILE = "SearchResultController Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michaelstoffer.SearchResultController-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunes Search.app/iTunes Search";
+			};
+			name = Debug;
+		};
+		D64BBED0231F51820088D90A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XVDLP5XYQ;
+				INFOPLIST_FILE = "SearchResultController Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michaelstoffer.SearchResultController-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunes Search.app/iTunes Search";
 			};
 			name = Release;
 		};
@@ -383,6 +535,15 @@
 			buildConfigurations = (
 				46BF023A2117D59700A24DE5 /* Debug */,
 				46BF023B2117D59700A24DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D64BBED1231F51820088D90A /* Build configuration list for PBXNativeTarget "SearchResultController Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D64BBECF231F51820088D90A /* Debug */,
+				D64BBED0231F51820088D90A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
